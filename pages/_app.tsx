@@ -6,6 +6,11 @@ import { light } from "@/scss/MaterialTheme";
 import { useState } from "react";
 import "../scss/app.scss";
 import "../scss/pc/main.scss";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+
 
 export default function App({ Component, pageProps }: AppProps) {
   //@ts-ignore
