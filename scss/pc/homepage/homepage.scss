@@ -361,17 +361,21 @@
             height: 400px;
             display: flex;
             flex-direction: row;
+            overflow: hidden;
 
             .popular-property-slide {
-              width: auto;
+              width: 300px;
+              min-width: 300px;
+              flex-shrink: 0;
               height: auto;
               display: flex;
               margin: 10px 0 0 10px;
             }
           }
 
-          // Reuse same card styles as trend cards
-          .trend-card-box {
+          // Reuse same card styles as trend cards + popular cards
+          .trend-card-box,
+          .popular-card-box {
             position: relative;
             width: 300px;
             height: 375px;
@@ -405,6 +409,29 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
+              }
+
+              div.status {
+                top: 12px;
+                bottom: auto;
+                padding: 6px 12px;
+                background: #eb6753;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                img {
+                  width: 14px;
+                  height: 14px;
+                  margin-right: 5px;
+                }
+              }
+
+              div.price {
+                background: #000;
+                color: #fff;
               }
             }
 
